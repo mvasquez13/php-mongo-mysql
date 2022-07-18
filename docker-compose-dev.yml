@@ -1,0 +1,6 @@
+version: "3.8"
+services:
+  web_frontend:
+    volumes:
+      - ./src:/var/www/html/
+      - ./docker/xdebug/xdebug.ini.dev:/usr/local/etc/php/conf.d/xdebug.ini
